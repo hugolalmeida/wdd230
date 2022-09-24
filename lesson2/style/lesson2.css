@@ -1,0 +1,119 @@
+
+/* small views **************************/
+@media screen and (min-width: 260px){
+    
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Roboto+Condensed:ital,wght@1,300&family=Tapestry&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 260px;
+}
+main {
+    margin: 0px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header {
+    color: white;
+    text-align: center;
+    background-color: #DC1A21;
+    display: grid;
+}
+.img{
+    width: 200px;
+    margin: 20px;
+}
+.gridarea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+	"main"
+	"footer";
+}
+main section {
+    margin-top: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.background {
+    background-color: #F6AA1C;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.sub-tittle {
+    color: white;
+    margin-left: 20px;
+}
+a {
+    margin-left: 20px;
+}
+.company {
+    margin-left: 20px;
+}
+.description {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    margin: 0px;
+    background-color: #373F51;
+    display: grid;
+}
+#text {
+    padding-top: 10px ;
+    font-family: sans-serif ;
+    color: white;
+}
+}
+
+/* medium views **************************/
+@media screen and (min-width:321px) {
+body {
+        max-width: 768px;
+    }
+main {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+.img{
+        width: 300px;
+        margin: 20px;
+    }
+
+main section {
+    width: 340px;
+        
+}
+
+    }
+
+    /* large views **************************/
+    @media  screen and (min-width:769px) {
+    body {
+        max-width: 1600px;
+        margin-right: 0%;
+    }    
+    main {
+        
+        margin-left: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .img{
+            width: 410px;
+            margin: 20px;
+        }
+        main section {
+            width: 450px;
+            margin-left: 20px;
+        }
+        
+        }
