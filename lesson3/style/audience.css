@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 body{
-    font-family: Roboto Condensed;
     margin: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto Condensed;
+  }
+  main{
+    text-align: center;
+    font-size: 1.5em;
+}
+p {
+    font-family: sans-serif;  
 }
 header, footer {
     background-color: #C9E265;
@@ -46,4 +55,12 @@ nav a:hover {
 
 footer {
     justify-content: center;
+    margin: 0px;
 }
+
+@media (max-width: 760px){
+    nav {
+      flex-direction: column;
+    }
+    
+      }

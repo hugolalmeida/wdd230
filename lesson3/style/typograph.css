@@ -61,3 +61,24 @@ nav a:hover {
 footer {
     justify-content: center;
 }
+
+@media (max-width: 1200px){
+    nav {
+        flex-direction: column;
+      }
+      #hero-msg{
+          margin-top: 0px;
+          align-self: center;
+          font-size: 1.5em;
+      }
+}
+@media (max-width: 760px){
+    nav {
+      flex-direction: column;
+    }
+    #hero-msg{
+        margin-top: 0px;
+        align-self: center;
+        font-size: 1em;
+    }
+      }

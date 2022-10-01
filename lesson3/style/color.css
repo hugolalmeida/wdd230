@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 body{
-    font-family: Roboto Condensed;
+    
     margin: 0px;
+}
+main{
+  text-align: center;
+  font-size: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto Condensed;
+}
+p {
+  font-family: sans-serif;  
 }
 header, footer {
     background-color: #C9E265;
@@ -21,8 +31,8 @@ nav {
     width: 100%;
     background-color: #36454f;
 	text-align: center;
-    display: flex;
-        justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -48,6 +58,19 @@ footer {
     justify-content: center;
 }
 
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
 :root {
     --primary-color: #C9E265   ;
     --secondary-color: #008037 ;
@@ -72,3 +95,16 @@ footer {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
   }
+  
+  @media (max-width: 1200px){
+    nav {
+        flex-direction: column;
+      }
+      
+}
+@media (max-width: 760px){
+    nav {
+      flex-direction: column;
+    }
+    
+      }
