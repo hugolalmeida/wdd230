@@ -7,9 +7,43 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto Condensed;
   }
   main{
-    text-align: center;
     font-size: 1.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
 }
+
+    .grid {
+        margin-top: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    img{
+        width: 360px;
+        margin: 20px;
+    }
+    
+    .name{
+        text-align: center;
+        color: white;
+    }
+    .background {
+        background-color: #008037;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .text{
+        margin: 20px;
+        align-items: baseline;
+    }
 p {
     font-family: sans-serif;  
 }
@@ -31,7 +65,7 @@ nav {
     background-color: #36454f;
 	text-align: center;
     display: flex;
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
 
@@ -57,10 +91,22 @@ footer {
     justify-content: center;
     margin: 0px;
 }
-
+@media (max-width: 1200px){
+    nav {
+      flex-direction: column;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+      }
+    }
 @media (max-width: 760px){
     nav {
       flex-direction: column;
+    }
+    main {
+        grid-template-columns:  1fr;
     }
     
       }

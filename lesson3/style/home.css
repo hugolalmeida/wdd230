@@ -4,6 +4,16 @@ body{
     font-family: Roboto Condensed;
     margin: 0px;
 }
+main{
+    text-align: center;
+    font-size: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto Condensed;
+  }
+p {
+    font-family: sans-serif;  
+}
 
 header, footer {
     background-color: #C9E265;
@@ -58,7 +68,7 @@ nav a:hover {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
-    color: black);
+    color: black;
     font-size: 2em;
     text-align: center;
 }
