@@ -6,7 +6,6 @@ p {
     font-family: sans-serif;  
 }
 body{
-    
     margin: 0px;
 }
 header, footer{
@@ -54,58 +53,88 @@ header h3{
 	text-align: center;
 }
 .flow{
-	display: flex;
-	justify-content: center;
-	gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(3, 150px);
+	gap: 10px;
 }
 
-.flow1 {
-	display: flex;
-	flex-flow: column;
-}
-.flow1 div {
-	background-color: gray;
-	width: 200px;
-	height: 200px;
-	margin-bottom: 20px;
-}
-.flow2 {
-	display: flex;
-	flex-flow: column;
-}
-.flow2 div {
-	background-color: gray;
-	width: 200px;
-	height: 200px;
-	margin-bottom: 20px;
-}
+
 .flow3{
 	background-color: gray;
-	width: 200px;
-	height: 640px;
+	width: 100%;
+	height: 100%;
+	grid-column: 8/9;
+	grid-row: 1/4;
 }
-.flow3 section{
+
+span#spot {
+	display: block;
 	background-color: #A1A5AA;
-	
-	margin-left: 20px;
-	width: 160px;
-	height: 180px;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 140px;
+	height: 140px;
 	border: 1px solid black;
 }
-#spot {
-	margin-top: 50px;
+span#spot1 {
+	display: block;
+	background-color: #A1A5AA;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 140px;
+	height: 140px;
+	border: 1px solid black;
 }
-.flow3 div{
-	display: flex;
-	flex-direction: column;
+span#spot2 {
+	display: block;
+	background-color: #A1A5AA;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 140px;
+	height: 140px;
+	border: 1px solid black;
+}
+
+
+#event {
+	
+	width: 100%;
+	grid-column: 3/4;
+	grid-row: 1/2;
+	background-color: gray;
+}
+#weather{
+	width: 100%;
+	background-color: gray;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+#join {
+	width: 100%;
+	background-color: gray;
+	grid-column: 3/4;
+	grid-row: 3/4;
 }
 #box {
-	width: 420px;
-	height: 420px;
+	grid-column: 4/8;
+	grid-row: 1/3;
+	width: 100%;
+	background-color: gray;
 }
 #box1 {
-	width: 420px;
+	grid-column: 4/8;
+	grid-row: 3/4;
+	width: 100%;
+	background-color: gray;
+	
 }
+
+
 nav {
 	margin: 0 auto;
 	display: flex;
@@ -157,4 +186,7 @@ nav {
 .social svg {
 	width: 25px;
 	height: auto;
+}
+footer{
+	margin-top: 10px;
 }

@@ -1,0 +1,52 @@
+@media (max-width: 700px){
+    #join {
+        display: none;
+    }
+    .flow {
+        display: grid;
+    }
+    #event {
+        grid-column: 3/9;
+        grid-row: 2/3;
+
+    }
+    #weather{
+        grid-column: 3/9;
+        grid-row: 3/4;
+    }
+    #box1{
+        grid-column: 3/9;
+        grid-row: 4/5;
+    }
+    .flow3{
+        grid-row: 5/7;
+        grid-template-columns: repeat(2, 95%);
+    }
+    span#spot {
+        display: block;
+        grid-column: 1;
+        grid-row: 1/2;
+        margin-left: 8px;
+        
+    }
+    span#spot1 {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 0px;
+        margin-left: 8px;
+        
+    }
+    .logo1{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .logo1 picture{
+        text-align: center;
+    }
+    #logo-txt{
+        text-align: center;
+    }
+    
+}
