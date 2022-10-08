@@ -1,0 +1,57 @@
+@media (max-width :960px){
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child{
+        display: block;
+    }
+        .responsive li{
+        display: block;
+    }
+    .responsive a {
+        font-size: 1em;
+    }
+    .social {margin-right: 10px;}
+    .flexible {
+        flex-direction: row-reverse; 
+        margin-left: 50px;
+    }
+    .flow {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .flow3 section{
+        display: inline-block;
+    }
+.flow2 {
+    grid-row: 1;
+}
+.flow3 {
+    grid-row: 2/3;
+}
+.flow1 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#box {
+    width: 100%;
+    height: 200px;
+}
+#box1 {
+    width: 100%;
+    height: 200px;
+}
+#weather {
+    float: inline-end;
+}
+    #event {
+        width: 100%;
+        height: 200px; 
+    }
+
+    #spot2 {
+        display: none;
+    }
+}

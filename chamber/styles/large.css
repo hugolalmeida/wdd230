@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto Condensed;
+  }
+p {
+    font-family: sans-serif;  
+}
 body{
     
     margin: 0px;
@@ -6,15 +12,99 @@ body{
 header, footer{
     background-color: #A1A5AA;
 }
+header h3{
+	text-align: center;
+	padding-bottom: 20px;
+	color: white;
+
+}
+#background {
+	background-color: #004AAD ;
+	padding-top: 5px;
+}
 .nav-flow{
     display: flex;
+	border-bottom: 1px solid black;
 }
 .logo {
     display: flex;
+	
+}
+#logo-txt h3{
+	text-align: left;
+	color: black;
+}
+.logo1 img {
+    width: 100px;
+    border-radius: 100%;
+}
+.logo1 {
+    display: flex;
+	justify-content: center;
+	border-bottom: 1px solid black;
 }
 .logo img {
-    width: 80px;
+    width: 100px;
     border-radius: 100%;
+}
+.logo1 h3 {
+	margin-left: 150px;
+}
+#text {
+	text-align: center;
+}
+.flow{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.flow1 {
+	display: flex;
+	flex-flow: column;
+}
+.flow1 div {
+	background-color: gray;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.flow2 {
+	display: flex;
+	flex-flow: column;
+}
+.flow2 div {
+	background-color: gray;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.flow3{
+	background-color: gray;
+	width: 200px;
+	height: 640px;
+}
+.flow3 section{
+	background-color: #A1A5AA;
+	
+	margin-left: 20px;
+	width: 160px;
+	height: 180px;
+	border: 1px solid black;
+}
+#spot {
+	margin-top: 50px;
+}
+.flow3 div{
+	display: flex;
+	flex-direction: column;
+}
+#box {
+	width: 420px;
+	height: 420px;
+}
+#box1 {
+	width: 420px;
 }
 nav {
 	margin: 0 auto;
@@ -22,8 +112,10 @@ nav {
     flex: right;
 }
 .navigation {
+	display: flex;
 	list-style: none;
 	padding: 0;
+	align-self: center;
 }
 
 .navigation a {
@@ -34,21 +126,15 @@ nav {
 	color: black;
 	font-weight: 700;
 	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	font-size: 1.5em;
 }
 
-.navigation a.ham::before {
-	content: "🍔 ";
-}
 
 .navigation a:hover {
 	color: white;
 	background-color: black;
 }
 
-.navigation {
-    display: flex;
-}
 .navigation li {
     display: block; /* change state in small view */
     flex: 1 1 auto;
@@ -56,4 +142,19 @@ nav {
 
 .navigation li:first-child {
     display: none;
+}
+.flexible {
+	display: flex;
+	flex-direction: row;
+	margin-left: 200px;
+}
+.social {
+	margin-right: 0px;
+	align-self: center;
+	margin-left: 200px;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
 }
