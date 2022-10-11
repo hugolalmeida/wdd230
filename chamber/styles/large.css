@@ -10,6 +10,7 @@ body{
 }
 header, footer{
     background-color: #A1A5AA;
+	width: 100%;
 }
 header h3{
 	text-align: center;
@@ -138,7 +139,6 @@ span#spot2 {
 nav {
 	margin: 0 auto;
 	display: flex;
-    flex: right;
 }
 .navigation {
 	display: flex;

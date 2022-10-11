@@ -1,4 +1,7 @@
 @media (max-width: 700px){
+    .flexible { 
+        margin-left: -100px;
+    }
     #join {
         display: none;
     }
