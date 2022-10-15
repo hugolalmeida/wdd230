@@ -11,5 +11,14 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(d);
 
-let current_date = document.getElementById("current-day").textContent = fulldateUK
+let current_date = document.getElementById("current-day").textContent = fulldateUK;
 
+        
+    
+let wday = d.getDay();
+if (wday === 1){
+    window.alert("🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.");
+}
+else if(wday ===2){
+    window.alert("🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.");
+}
