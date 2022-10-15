@@ -18,7 +18,7 @@ header h3{
 	color: white;
 
 }
-#background {
+#background1 {
 	background-color: #004AAD ;
 	padding-top: 5px;
 }
@@ -30,7 +30,7 @@ header h3{
     display: flex;
 	
 }
-#logo-txt h3{
+.logo-txt h3{
 	text-align: left;
 	color: black;
 }
@@ -79,7 +79,7 @@ header h3{
 	text-shadow: 5px 5px 10px black;
 	color: yellow;
 }
-span#spot {
+#spot {
 	display: block;
 	background-color: #004AAD;
 	margin-top: 20px;
@@ -90,7 +90,7 @@ span#spot {
 	border: 1px solid black;
 }
 
-span#spot1 {
+#spot1 {
 	display: block;
 	background-color: #004AAD;
 	margin-top: 0px;
@@ -99,17 +99,17 @@ span#spot1 {
 	height: 140px;
 	border: 1px solid black;
 }
-span#spot1 h4{
+#spot1 h4{
 	margin-top: 0px;
 }
-span#spot1 img{
+#spot1 img{
 	align-self: center;
 	margin-top: -10px;
 }
-span#spot1 p{
+#spot1 p{
 	margin-top: 10px;
 }
-span#spot2 {
+#spot2 {
 	display: block;
 	background-color: #004AAD;
 	margin-top: 0px;
@@ -155,7 +155,6 @@ text-shadow: 5px 5px 10px black;
 	display: flex;
 	flex-direction: row;
 	border-bottom: 1px solid white;
-	padding-bottom: -20px;
 }
 #weather section img {
 	float: left;
@@ -210,7 +209,7 @@ text-shadow: 5px 5px 10px black;
 }
 #tittle-h{
 	color: black;
-	text-shadow: #A1A5AA;
+	text-shadow: 5px 5px 10px #353536;
 	position: relative;
 	left: 40px;
 	grid-column: 1/3;

@@ -53,7 +53,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-span#spot {
+#spot {
 	display: inline-block;
     grid-column: 1/3;
     width: 100%;
@@ -63,7 +63,7 @@ span#spot {
     margin-left: 27px;  
 
 }
-span#spot1 {
+#spot1 {
 	display: inline-block;
     grid-column: 3/5;
     width: 90%;
@@ -89,7 +89,7 @@ span#spot1 {
 #weather section h3{
     margin-left: 50px;
 }
-    span#spot2 {
+    #spot2 {
         display: none;
     }
 }
