@@ -69,7 +69,7 @@ header h3{
 	grid-row: 1/4;
 }
 .flow3 p{
-	color: #A1A5AA;
+	color: white;
 	text-align: center;
 	margin-top: -10px;
 	font-size: .8em;
@@ -133,7 +133,7 @@ header h3{
 }
 #event p{
 text-align: center;
-color: #A1A5AA;
+color: white;
 text-shadow: 5px 5px 10px black;
 }
 #event a{
@@ -166,14 +166,14 @@ text-shadow: 5px 5px 10px black;
 #weather section h3{
 	margin-left: 60px;
 	text-shadow: 5px 5px 10px black;
-	color: #A1A5AA;
+	color: white;
 }
 #weather p {
 	text-align: center;
 	font-size: .8em;
 	margin-top: 0px;
 	text-shadow: 5px 5px 10px black;
-	color: #A1A5AA;
+	color: white;
 }
 .icon {
 	width: 40px;
@@ -189,7 +189,7 @@ text-shadow: 5px 5px 10px black;
 }
 #join p{
 	text-align: center;
-	color: #A1A5AA;
+	color: white;
 }
 #box {
 	grid-column: 3/9;
@@ -232,7 +232,7 @@ text-shadow: 5px 5px 10px black;
     padding: 10px 10px 10px 10px;
     font-size: 18px;
     text-decoration: none;
-    color: white;
+    color: black;
 	text-shadow: 5px 5px 10px black;
 	box-shadow: 5px 5px 10px black;
 }
@@ -267,7 +267,7 @@ text-shadow: 5px 5px 10px black;
 }
 #box1 p {
 	text-align: center;
-	color: #A1A5AA;
+	color: white;
 }
 
 
