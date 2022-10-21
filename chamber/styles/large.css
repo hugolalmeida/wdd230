@@ -74,6 +74,7 @@ header h3{
 	margin-top: -10px;
 	font-size: .8em;
 	text-shadow: 5px 5px 10px black;
+	margin: 0 10px 0 10px;
 }
 .flow3 a{
 	text-shadow: 5px 5px 10px black;
@@ -108,6 +109,7 @@ header h3{
 }
 #spot1 p{
 	margin-top: 10px;
+
 }
 #spot2 {
 	display: block;
@@ -190,6 +192,8 @@ text-shadow: 5px 5px 10px black;
 #join p{
 	text-align: center;
 	color: white;
+	text-shadow: 5px 5px 10px black;
+	margin: 10px 10px 0 10px;
 }
 #box {
 	grid-column: 3/9;
@@ -199,11 +203,19 @@ text-shadow: 5px 5px 10px black;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 }
+#hero {
+	width: 100%;
+	height: 300px;
+	grid-column: 1/3;
+	grid-row: 1/3;
+	z-index: -1;
+}	
+
 #hero-img{
 	width: 100%;
 	height: 300px;
 	grid-column: 1/3;
-	grid-row: 1/4;
+	grid-row: 1/3;
 	z-index: -1;
 	border: 1px solid black;
 }
@@ -238,11 +250,10 @@ text-shadow: 5px 5px 10px black;
 }
 .button1{
 	border: 3px solid #004AAD;
-	position: relative;
-	left: 100px;
+	margin-left: 100px;
 	align-self: center;
 	grid-column: 2/3;
-	grid-row: 3/4;
+	grid-row: 2/3;
 	text-align: center;
 	width: 150px;
 	height: 30px;
@@ -268,6 +279,8 @@ text-shadow: 5px 5px 10px black;
 #box1 p {
 	text-align: center;
 	color: white;
+	text-shadow: 5px 5px 10px black;
+	margin: 0 10px 0 10px;
 }
 
 

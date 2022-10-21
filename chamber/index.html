@@ -17,7 +17,7 @@
     <div class="nav-flow">
         <div class="logo">
             <picture>
-            <img src="images/caerj.png" alt="logo">
+            <img src="images/rsz_1caerj.png" alt="logo">
         </picture>
         <section class="logo-txt">
             <h2>CHAMBER OF COMMERCE AND INDUSTRY<br></h2>
@@ -71,7 +71,7 @@
             <h3>33°C<br>Sunny</h3>
             <h3></h3>
         </section>
-        <p>Wind Speed:     2.5km/h<br>Wind Chill:     N/A</p>
+        <p>Wind Speed:     <span id="speed"></span>km/h<br>Wind Chill:     <span id="windchill"></span></p>
             </div>
             <div id="join">
                 <a class="button" href="#">Join Us</a>
@@ -79,7 +79,11 @@
             </div>
             
             <div id="box">
-                <img id="hero-img" src="images/Optimized-hero-rio.jpg" alt="Rio image">
+                <picture id="hero">
+                    <source media="(max-width :960px)" srcset="images/rsz_1wdd230-med.jpg" >    
+                        <source media="(max-width: 700px)" srcset="images/rsz_21wdd230-small.jpg" >        
+                    <img id="hero-img" src="images/rsz_11wdd230-large.jpg" alt="Chamber" >
+                </picture>
                 <h1 id="tittle-h"><strong>Welcome to CAERJ</strong></h1>
                 <a class="button1" href="#"><strong>Join the Chamber</strong> </a>
                 
@@ -114,7 +118,7 @@
     <footer>
         <div class="logo1">
             <picture>
-            <img src="images/caerj.png" alt="logo">
+            <img src="images/rsz_1caerj.png" alt="logo">
         </picture>
         <section class="logo-txt">
             <h2>CHAMBER OF COMMERCE AND INDUSTRY</h2>
@@ -130,5 +134,6 @@
         <h2 id="text">&copy; <span class="currentyear"></span> CAERJ Chamber | Hugo L. Almeida | WDD230 Project | Last Updated: <span id="jscript"></span></h2>
     </footer>
     <script defer src="scripts/assign.js"></script>
+    <script defer src="scripts/windchill.js"></script>
 </body>
 </html>
