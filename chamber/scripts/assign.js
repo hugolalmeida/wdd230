@@ -17,8 +17,8 @@ let current_date = document.getElementById("current-day").textContent = fulldate
     
 let wday = d.getDay();
 if (wday === 1){
-    window.alert("🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.");
+    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
 else if(wday ===2){
-    window.alert("🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.");
+    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
