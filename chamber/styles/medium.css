@@ -36,9 +36,10 @@
     height: 200px;
 }
 .button1{
-    grid-row: 1/2;
+    grid-row: 3/4;
     align-self: flex-end;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .button{
     width: 90%;
