@@ -27,7 +27,7 @@
 
 
 #box {
-    grid-column: 3/10;
+    grid-column: 3/9;
     grid-row: 1/2;
     
 }
@@ -45,11 +45,11 @@
     width: 90%;
 }
 #box1 {
-    grid-column: 3/10;
+    grid-column: 3/9;
     grid-row: 2/3;
 }
 .flow3{
-    grid-column: 3/10;
+    grid-column: 3/9;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -73,7 +73,7 @@
     margin-left: 0px;
 }
 #join {
-    grid-column: 3/10;
+    grid-column: 3/9;
     grid-row: 4/5;
 }
 #event {
@@ -81,14 +81,17 @@
     grid-row: 5/6; 
     }
 #weather {
-    grid-column: 7/10;
+    grid-column: 7/9;
     grid-row: 5/6;
 }
+#weather section img{
+    margin-left: 30px;
+}  
 #weather p{
     margin-top: 10px;
 }  
 #weather section h3{
-    margin-left: 50px;
+    margin-left: 10px;
 }
     #spot2 {
         display: none;
