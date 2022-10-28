@@ -383,6 +383,7 @@ footer{
 
 @keyframes fade-in {
     from {
+		transition-delay: 0.4s;
         transform: scale(0.9);
         filter: blur(4px);
         border-radius: 20px;

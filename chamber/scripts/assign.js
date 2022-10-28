@@ -52,20 +52,14 @@ const visitsDisplay = document.querySelector(".visits");
 const dayStr = document.querySelector(".day");
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
-let numDay = 1;
+
 if (d.setDate(d.getDate() + 1)){
     window.localStorage.clear();
 }  
-if (numDay === 1){
-dayStr.textContent ="day" 
-}else{
-dayStr.textContent ="days"  
-}
-
+let numDay = 1;
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits + 1;
-    
 } else{
     visitsDisplay.textContent = numVisits + 1;
     numDay++;
@@ -75,5 +69,10 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-
 daysDisplay.textContent = numDay;
+
+if (numDay === 1){
+dayStr.textContent ="day" 
+}else{
+dayStr.textContent ="days"  
+}
