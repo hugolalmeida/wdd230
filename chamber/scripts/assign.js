@@ -53,25 +53,28 @@ const dayStr = document.querySelector(".day");
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
+const dayNow = Date.now();
+// let numDay = 1;
 if (d.setDate(d.getDate() + 1)){
     window.localStorage.clear();
 }  
-let numDay = 1;
+
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits + 1;
 } else{
     visitsDisplay.textContent = numVisits + 1;
-    numDay++;
+    // numDay++;
 }
 // increment the number of visits.
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-daysDisplay.textContent = numDay;
+// daysDisplay.textContent = numDay;
+daysDisplay.textContent = Math.round(dayNow / 86400000);
 
-if (numDay === 1){
+if (dayNow === 1){
 dayStr.textContent ="day" 
 }else{
 dayStr.textContent ="days"  
