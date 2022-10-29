@@ -8,6 +8,17 @@ section {
     align-items: center;
     gap: 10px;
 }
-img {
-    transition: 0.5s;
+section img {
+    animation: fade-in 3s;
+}
+@keyframes fade-in {
+    from {
+        transform: scale(0.9);
+        filter: blur(4px);
+        border-radius: 100%;
+    }
+    to {
+        transform: scale(1);
+        filter: contrast(120%);
+    }
 }
