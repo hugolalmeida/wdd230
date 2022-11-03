@@ -48,9 +48,10 @@ imagesToLoad.forEach((img) => {
   });
 }
 const daysDisplay = document.querySelector(".visits");
+// const start = Date.now(02/11/2022);
 // get the stored value in localStorage
 let numDays = Number(window.localStorage.getItem("visits-ls"));
-numDays = (Date.now() - d.getTime(current_date)) / 84400000;
+numDays = d.getTime(current_date) / 84400000;
   //display the millsescond in days
 daysDisplay.textContent = Math.floor(numDays);
 
