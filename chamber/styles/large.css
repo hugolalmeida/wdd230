@@ -58,6 +58,8 @@ header h3{
 }
 #text {
 	text-align: center;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
 }
 .flow{
 	display: grid;
@@ -220,8 +222,6 @@ text-shadow: 5px 5px 10px black;
 #hero-img{
 	width: 100%;
 	height: 100%;
-	grid-column: 1/3;
-	grid-row: 1/4;
 	z-index: -1;
 	
 }

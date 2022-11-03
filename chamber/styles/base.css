@@ -9,12 +9,10 @@
         display: grid;
     }
     #event {
-        grid-column: 3/9;
         grid-row: 2/3;
 
     }
     #weather{
-        grid-column: 4/8;
         grid-row: 3/4;
     }
     #weather section h3{
@@ -32,11 +30,13 @@
         margin-right: 10px;
 
     }
-    
-    #box1{
+    #weather, #box, #event{
         grid-column: 3/9;
+
+    }
+
+    #box1{
         grid-row: 4/5;
-       
     }
     #box1 p{
          margin: 0px 10px 0 10px;
