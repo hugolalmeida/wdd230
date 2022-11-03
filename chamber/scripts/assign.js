@@ -50,11 +50,13 @@ imagesToLoad.forEach((img) => {
 const daysDisplay = document.querySelector(".visits");
 // get the stored value in localStorage
 let numDays = Number(window.localStorage.getItem("visits-ls"));
-numDays = d.getDay();
+numDays = (Date.now() - d.getTime(current_date)) / 84400000;
+  //display the millsescond in days
+daysDisplay.textContent = Math.floor(numDays);
 
 // store the new number of visits value
 localStorage.setItem("visits-ls", current_date);
 
-// daysDisplay.textContent = numDay;
-daysDisplay.textContent = numDays;
+
+
 
