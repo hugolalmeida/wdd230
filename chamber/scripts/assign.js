@@ -48,16 +48,18 @@ imagesToLoad.forEach((img) => {
   });
 }
 const daysDisplay = document.querySelector(".visits");
-const start = new Date("03/11/2022");
+const start = new Date("11/04/2022");
 // get the stored value in localStorage
-let numDays = Number(window.localStorage.getItem("visits-ls"));
-numDays = (Date.now(current_date) - start.getTime()) / 84400000;
+let numDays = Number(window.localStorage.getItem("day-ls"));
+numDays = d.getTime() - start.getTime();
   //display the millsescond in days
-daysDisplay.textContent = Math.floor(numDays);
+daysDisplay.textContent = Math.ceil(numDays / (1000 * 3600 * 24));
 
 // store the new number of visits value
-localStorage.setItem("visits-ls", current_date);
+localStorage.setItem("day-ls", current_date);
 
 
-
+let visit = Number(window.localStorage.getItem("visit-ls"));
+visit++;
+localStorage.setItem("visit-ls", visit);
 
