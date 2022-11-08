@@ -72,5 +72,20 @@
     .logo-txt{
         text-align: center;
     }
-    
+    #membership-place{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #space{
+        align-items: center;
+    }
+    .member-tittle{
+        font-size: 1.3em;
+    }
+    .inputs{
+        width: 50%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
 }

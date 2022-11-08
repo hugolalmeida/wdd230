@@ -65,34 +65,32 @@
         <form action="thankyou.html">
             <h1 class="member-tittle">Join Us</h1>
             <label>First Name<br>
-            <input type="text" name="first_name"  required><br>
+            <input class="inputs" type="text" name="first_name"  required><br>
             </label>
-            <label for="last_name">Last Name</label><br>
-            <input type="text" name="last_name" required><br>
-            <label for="business_name">Business Name</label><br>
-            <input type="text" name="business_name" title="Please include the name of your business here" required=""><br>
-            <label for="position">Business Position</label><br>
-            <input type="text" name="position"  pattern="[a-zA-z \-]{7,}" title="must include at least 7 characters; only letters, spaces and hyphens"><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" placeholder="sample@gmail.com" required><br>
-            <label >Cell Phone</label><br>
-            <input type="tel"  name="phone"><br>
-            <label  for="membership">Membership Level</label><br>
+            <label>Last Name</label><br>
+            <input class="inputs" type="text" name="last_name" required><br>
+            <label>Business Name</label><br>
+            <input class="inputs" type="text" name="business_name" title="Please include the name of your business here" required=""><br>
+            <label>Business Position</label><br>
+            <input class="inputs" type="text" name="position"  pattern="[a-zA-z \-]{7,}" title="must include at least 7 characters; only letters, spaces and hyphens"><br>
+            <label>Email</label><br>
+            <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required><br>
+            <label>Cell Phone</label><br>
+            <input class="inputs" type="tel"  name="phone" required><br>
+            <label>Membership Level</label><br>
             
-            <input id="level" type="radio" name="np">
-            <label for="np">Nonprofit</label>
-            <input id="level" type="radio" name="bronze">
-            <label for="bronze">Bronze</label>
-            <input id="level" type="radio" name="silver">
-            <label for="np">Silver</label>
-            <input id="level" type="radio" name="gold">
-            <label for="np">Gold</label><br>
+            <input class="level" type="radio" name="np">
+            <label>Nonprofit</label>
+            <input class="level" type="radio" name="bronze">
+            <label>Bronze</label>
+            <input class="level" type="radio" name="silver">
+            <label>Silver</label>
+            <input class="level" type="radio" name="gold">
+            <label>Gold</label><br><br>
 
-            
-
-            <label for="description">Business Description</label><br>
-            <textarea type="textarea" name="businessDesc" class="input-box" placeholder="Briefly describe your business here." required=""></textarea><br>
-            <input type="date" name="date" hidden="" id="date" value="2022-11-03">
+            <label class="desc-tittle">Business Description</label><br>
+            <textarea name="businessDesc" class="input-box" placeholder="Briefly describe your business here." required=""></textarea><br>
+            <input type="hidden" name="date" id="date">
             <input type="submit" class="submitBtn" name="submitBtn" value="Request Membership">
         </form>
         <div id="space">

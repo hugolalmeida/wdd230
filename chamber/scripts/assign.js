@@ -63,3 +63,4 @@ let visit = Number(window.localStorage.getItem("visit-ls"));
 visit++;
 localStorage.setItem("visit-ls", visit);
 
+document.getElementById("date").textContent = fulldateUK;

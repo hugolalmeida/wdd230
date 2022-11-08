@@ -96,4 +96,17 @@
     #spot2 {
         display: none;
     }
+    /* Join Page */
+    form{
+        margin-left: 10%;
+    }
+    #space{
+        margin-left: 15%;
+    }
+
+    #space ul{
+        width: 60%;
+    }
 }
+
+
