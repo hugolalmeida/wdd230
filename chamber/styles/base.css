@@ -84,8 +84,11 @@
         font-size: 1.3em;
     }
     .inputs{
-        width: 50%;
+        width: 70%;
         margin-bottom: 20px;
         padding-bottom: 10px;
+    }
+    .input-box{
+        width: 70%; 
     }
 }

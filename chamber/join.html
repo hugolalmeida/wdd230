@@ -67,29 +67,41 @@
             <label>First Name<br>
             <input class="inputs" type="text" name="first_name"  required><br>
             </label>
-            <label>Last Name</label><br>
+            <label>Last Name<br>
             <input class="inputs" type="text" name="last_name" required><br>
-            <label>Business Name</label><br>
-            <input class="inputs" type="text" name="business_name" title="Please include the name of your business here" required=""><br>
-            <label>Business Position</label><br>
-            <input class="inputs" type="text" name="position"  pattern="[a-zA-z \-]{7,}" title="must include at least 7 characters; only letters, spaces and hyphens"><br>
-            <label>Email</label><br>
-            <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required><br>
-            <label>Cell Phone</label><br>
-            <input class="inputs" type="tel"  name="phone" required><br>
-            <label>Membership Level</label><br>
+            </label>
             
-            <input class="level" type="radio" name="np">
-            <label>Nonprofit</label>
-            <input class="level" type="radio" name="bronze">
-            <label>Bronze</label>
-            <input class="level" type="radio" name="silver">
-            <label>Silver</label>
-            <input class="level" type="radio" name="gold">
-            <label>Gold</label><br><br>
+            
+                <label>Business Name<br>
+                    <input class="inputs" type="text" name="business_name" title="Please include the name of your business here" required=""><br></label>
+                    <label>Business Position<br>
+                    <input class="inputs" type="text" name="position"  pattern="[a-zA-z \-]{7,}" title="must include at least 7 characters; only letters, spaces and hyphens"><br></label>
+            
+            <label class="desc-tittle">Business Description<br>
+                <textarea name="businessDesc" class="input-box" placeholder="Briefly describe your business here." required=""></textarea><br></label><br>
 
-            <label class="desc-tittle">Business Description</label><br>
-            <textarea name="businessDesc" class="input-box" placeholder="Briefly describe your business here." required=""></textarea><br>
+                <label>Email<br>
+                    <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required><br></label>
+                    <label>Cell Phone<br>
+                        <input class="inputs" type="tel"  name="phone" required><br></label>
+
+            <h3>Membership Level</h3>
+            
+            <label>Nonprofit
+            <input class="level" type="radio" name="membership-level">
+            </label>
+            <label>Bronze
+            <input class="level" type="radio" name="membership-level">
+            </label>
+            <label>Silver
+            <input class="level" type="radio" name="membership-level">
+            </label>
+            <label>Gold
+            <input class="level" type="radio" name="membership-level">
+            </label><br><br>
+
+
+            
             <input type="hidden" name="date" id="date">
             <input type="submit" class="submitBtn" name="submitBtn" value="Request Membership">
         </form>
@@ -142,6 +154,6 @@
         </div>
         <h2 id="text">&copy; <span class="currentyear"></span> CAERJ Chamber | Hugo L. Almeida | WDD230 Project | Last Updated: <span id="jscript"></span></h2>
     </footer>
-    <script defer src="scripts/assign.js"></script>
+    <script defer src="scripts/join.js"></script>
 </body>
 </html>
