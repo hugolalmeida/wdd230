@@ -1,11 +1,51 @@
 {
     "companies": [
       {
-        "name": "Joseph",
-        "adress": "Smith",
-        "phone": 0,
-        "weburl": "27 June 1844",
-        "membership": "14",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+        "name": "CISBRA",
+        "adress": "Rua da Assembléia, 77 - 3º andar - Centro - RJ - Cep. 20.011-001",
+        "phone": "+55 (21) 2252 4100",
+        "weburl": "https://www.cisbra.org.br/",
+        "membership": "GOLD",
+        "imageurl": "https://static.wixstatic.com/media/0532de_fed9281b292f4d2ba98ced1f70bf017e~mv2.png/v1/fill/w_270,h_63,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO-CISBRA-2020-(COR-HORIZONTAL).png"
+      },
+      {
+        "name": "ICC",
+        "adress": "Rua Surubim, 504 – 12º andar - Brooklin – São Paulo – SP – CEP 04571-050",
+        "phone": "+55 (11) 3040-8832 / 8835",
+        "weburl": "https://www.iccbrasil.org/",
+        "membership": "GOLD",
+        "imageurl": "https://www.iccbrasil.org/wp-content/uploads/2021/03/logo-icc.png"
+      },
+      {
+        "name": "FCCE",
+        "adress": "Av. Gen. Justo, 307 - Centro, Rio de Janeiro - RJ, 20021-130",
+        "phone": "+55 (21) 3804-9289",
+        "weburl": "https://www.fcce.org.br/",
+        "membership": "GOLD",
+        "imageurl": "https://static.wixstatic.com/media/5e6f71_df9ed746dbef4dcfbdd136814addae68~mv2.png/v1/crop/x_95,y_95,w_1011,h_1011/fill/w_172,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FCCE_Webinar_WebLayout.png"
+      },
+      {
+        "name": "FECOMERCIO-RS",
+        "adress": "Rua Fecomércio, 101 – Bairro Anchieta | Porto Alegre – RS | CEP:  90200-500 ",
+        "phone": "+55 (51) 3375-7000",
+        "weburl": "https://fecomercio-rs.org.br/",
+        "membership": "GOLD",
+        "imageurl": "https://fecomercio-rs.org.br/wp-content/themes/bones/library/images/logo-footer.png"
+      },
+      {
+        "name": "FECERJ",
+        "adress": "Av. Franklin Roosevelt, 84 - Salar 502 - 503 - 504, Centro - Castelo - Rio de Janeiro",
+        "phone": "+55 (21) 2220-7192",
+        "weburl": "http://www.fecerj.org.br/",
+        "membership": "GOLD",
+        "imageurl": "https://www.cntc.org.br/wp-content/uploads/2012/06/FECERJ.jpg"
+      },
+      {
+        "name": "UFRJ",
+        "adress": "Rua Antônio Barros de Castro, 119-Cidade Universitária, Rio de Janeiro/RJ - CEP: 21941-853",
+        "phone": "+55 (21) 3938-9600",
+        "weburl": "https://ufrj.br/",
+        "membership": "GOLD",
+        "imageurl": "https://proarq.s3.sa-east-1.amazonaws.com/cfe965fdffb40012daa5563240a553cd.png"
       }]
     }
