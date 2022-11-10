@@ -91,4 +91,21 @@
     .input-box{
         width: 70%; 
     }
+    /* DIRECTORY PAGE */
+    .card-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .card-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-list section{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-list section img{
+        display: none;
+    }
 }

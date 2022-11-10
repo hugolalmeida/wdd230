@@ -436,3 +436,61 @@ label{
 .desc-tittle{
 	margin-top: 20px;
 }
+
+/* DIRECTORY PAGE */
+
+.card-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	margin: 10px;
+	gap: 10px;
+}
+.card-grid section{
+	margin: 20px;
+	width: 100%;
+	display: flex;
+	border-radius: 20px;
+	border: 1px solid black;
+	background-color:aliceblue;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+.card-grid section img{
+	width: 250px;
+	height: 150px;
+}
+.card-grid section p{margin: 10px ;}
+#dir-tittle{
+	text-align: center;
+}
+.card-list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	margin: 10px;
+	gap: 10px;
+}
+.card-list section{
+	margin: 20px;
+	width: 100%;
+	display: flex;
+	border-radius: 20px;
+	border: 1px solid black;
+	background-color:aliceblue;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+.card-list section img{
+	width: 250px;
+	height: 150px;
+}
+.card-list section p{margin: 10px ;}
+#but-background{
+	display: none;
+	text-align: center;
+	background-color: aliceblue;
+}

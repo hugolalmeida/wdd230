@@ -1,5 +1,5 @@
 {
-    "companies": [
+  "companies": [
       {
         "name": "CISBRA",
         "adress": "Rua da Assembléia, 77 - 3º andar - Centro - RJ - Cep. 20.011-001",
@@ -47,5 +47,29 @@
         "weburl": "https://ufrj.br/",
         "membership": "GOLD",
         "imageurl": "https://proarq.s3.sa-east-1.amazonaws.com/cfe965fdffb40012daa5563240a553cd.png"
+      },
+      {
+        "name": "UERJ",
+        "adress": "Rua São Francisco Xavier, 524, Maracanã, Rio de Janeiro – RJ – Cep 20550-900",
+        "phone": "+55 (21) 2334-0000",
+        "weburl": "https://www.uerj.br/",
+        "membership": "GOLD",
+        "imageurl": "https://www.uerj.br/wp-content/uploads/2018/02/logomarca-uerj-300x300.png"
+      },
+      {
+        "name": "CAERGS",
+        "adress": "Av. Adolfo Inácio Barcelos, 938 • Centro •Gravataí - Rio Grande do Sul - Brasil",
+        "phone": "+55 51 3490 5868",
+        "weburl": "https://www.casadosacores-rs.org.br/",
+        "membership": "GOLD",
+        "imageurl": "https://static.wixstatic.com/media/6b3764_6cf982f132264524ac6013f4446e7c97~mv2_d_4500_3223_s_4_2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO-TRANS-BCO-03.png"
+      },
+      {
+        "name": "J.P.MORGAN",
+        "adress": " Avenida Brigadeiro Faria Lima 3729, Andar 6 parte 10 Sao Paulo - São Paulo - Brasil",
+        "phone": "+55 11 4950 3700",
+        "weburl": "https://www.jpmorgan.com/global",
+        "membership": "GOLD",
+        "imageurl": "https://www.jpmorgan.com/content/dam/shared/logos/logos-cb-jpm.svg"
       }]
     }

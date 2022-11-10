@@ -107,6 +107,35 @@
     #space ul{
         width: 60%;
     }
+/* DIRECTORY PAGE */
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    #but-background{
+        display: block;
+    }
+    .card-list{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card-list section{
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color:aliceblue;
+        gap: 5px;
+        margin: 10px;
+    }
+    .card-list section img{
+        width: 150px;
+        height: 50px;
+    }
+    .card-list section h2{
+        margin-left: 10px;
+    }
 }
 
 

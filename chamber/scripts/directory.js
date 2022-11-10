@@ -1,35 +1,23 @@
-function toggleMenu () {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
-let d = new Date();
+// DISPLAY CARDS
 
-let year = document.querySelector(".currentyear").textContent = d.getFullYear();
+const requestURL = 'https://run.mocky.io/v3/902db453-c87a-416f-937a-d0695c71f40d';
+const cards = document.querySelector('.card-grid');
 
-let last_update = document.querySelector("#jscript").textContent = document.lastModified;
 
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(d);
-
-let current_date = document.getElementById("current-day").textContent = fulldateUK;
-
-        
-    
-let wday = d.getDay();
-if (wday === 1){
-    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-}
-else if(wday ===2){
-    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-}
-
-document.getElementById("date").value = fulldateUK;
-
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const companie = jsonObject['companies'];
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    companie.forEach(displayCompanies);
+  });
 
 // Grid Button and List Button
 const gridbutton = document.querySelector("#but-grid");
 const listbutton = document.querySelector("#but-list");
-const display = document.querySelector("div");
+const display = document.querySelector(".card-grid");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
@@ -46,25 +34,7 @@ function showList() {
 	display.classList.remove("card-grid");
 }
 
-// DISPLAY CARDS
-
-const requestURL = 'https://github.com/hugolalmeida/wdd230/blob/main/chamber/json/data.json';
-const cards = document.querySelector('.card-grid');
-
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const companie = jsonObject['companies'];
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    companie.forEach(displayCompanies);
-  });
-
-
-
-// INCOMPLETE
+// COMPLETE
 function displayCompanies(companie){
     // Create elements to add to the document
   let card = document.createElement('section');
@@ -91,5 +61,40 @@ function displayCompanies(companie){
   card.appendChild(p2);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  cards.appendChild(card);
+  document.querySelector('.card-grid').appendChild(card);
 }
+
+
+
+function toggleMenu () {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+let d = new Date();
+
+let year = document.querySelector(".currentyear").textContent = d.getFullYear();
+
+let last_update = document.querySelector("#jscript").textContent = document.lastModified;
+
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(d);
+
+let current_date = document.getElementById("current-day").textContent = fulldateUK;
+
+        
+    
+let wday = d.getDay();
+if (wday === 1){
+    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}
+else if(wday ===2){
+    document.getElementById("banner").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}
+
+
+
+
+
+
+
+
