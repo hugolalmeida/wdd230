@@ -29,12 +29,14 @@ p {
 
 main {
   margin-left: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  justify-items: center;
+  
 }
 
-
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
 section {
   margin: 0.25rem;
   padding: 0.35rem;
@@ -61,4 +63,16 @@ img {
 footer {
   border-top: 1px solid #555;
   padding: 20px;
+}
+
+@media (max-width: 790px){
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 475px){
+  .cards{
+    grid-template-columns: 1fr;
+  }
 }
