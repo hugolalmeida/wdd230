@@ -171,6 +171,9 @@ text-shadow: 5px 5px 10px black;
 	margin-top: 20px;
 
 }
+#city-name{
+	font-size: .8em;
+}
 
 #weather section h6{
 	margin-left: 20px;
