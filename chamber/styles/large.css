@@ -154,25 +154,26 @@ text-shadow: 5px 5px 10px black;
 	background-color: #004AAD;
 	grid-column: 2/4;
 	grid-row: 2/3;
-	
 }
 
 #weather section {
-	margin-top: -30px;
+	margin-top: -40px;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
 	border-bottom: 1px solid white;
+	justify-content: center;
+	align-items: center;
+	
 }
 #weather section img {
 	float: left;
 	margin-top: 20px;
-	margin-left: 60px;
 
 }
 
-#weather section h3{
-	margin-left: 60px;
+#weather section h6{
+	margin-left: 20px;
 	text-shadow: 5px 5px 10px black;
 	color: white;
 }
@@ -186,6 +187,7 @@ text-shadow: 5px 5px 10px black;
 .icon {
 	width: 40px;
 	height: 40px;
+	align-self: baseline;
 }
 #join {
 	display: flex;
@@ -237,6 +239,7 @@ text-shadow: 5px 5px 10px black;
 .subtittle{
 	text-align: center;
 	color: aliceblue;
+	font-family: 'Roboto Condensed';
 	text-shadow: 5px 5px 10px black;
 }
 .button{
