@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>CAERJ Directory</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <div id="banner"></div>
@@ -60,14 +60,38 @@
     <h3><span id="current-day"></span></h3>
     </div>
     </header> 
-    <main>
-        <h1 id="dir-tittle">Directory</h1>
-        <div id="but-background">
-            <button id="but-grid">Grid</button>
-            <button id="but-list">List</button>
-        </div>
-        <div class="card-grid"></div>
+    <main >
+        <div id="membership-place">
         
+            <form action="thankyou.html">
+            <h1 class="member-tittle">Contact Us</h1>
+            <label>Name<br>
+            <input class="inputs" type="text" name="name"  required><br>
+            </label>
+            <label>Email<br>
+                <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required><br></label>
+            <label class="desc-tittle">Question/Concern<br>
+                <textarea name="businessDesc" class="input-box" placeholder="Describe your Question/Concern here." required=""></textarea><br></label><br> 
+                   
+            <input type="hidden" name="date" id="date">
+            <input type="submit" class="submitBtn" name="submitBtn" value="Submit">
+        </form>
+        <div id="space">
+            
+            <h1 class="member-tittle">Visit us</h1>
+            <div class="picture">
+                <section>
+                    <img class="holder-img" src="images/placeholder.jpg" data-src="images/rsz_pao-de-acucar-rio.jpg" alt="The Christ Redemer">
+                    <h3 class="subtittle">CHAMBER OF COMMERCE AND INDUSTRY<br>OF THE STATE OF RIO DE JANEIRO</h3>
+                    <h4>Adress</h4>
+                    <p>R. da Assembléia, 77 - 3º Andar - Centro, Rio de Janeiro - RJ, 20011-001</p>
+                    <h4>Email/Phone</h4>
+                    <p>caerj_chamber@gmail.com<br>
+                        +55 (24) 33384750</p>
+                </section>
+            </div>
+        </div>
+    </div>
     </main>
     <footer>
         <div class="logo1">
@@ -87,6 +111,6 @@
         </div>
         <h2 id="text">&copy; <span class="currentyear"></span> CAERJ Chamber | Hugo L. Almeida | WDD230 Project | Last Updated: <span id="jscript"></span></h2>
     </footer>
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/contact.js"></script>
 </body>
 </html>
