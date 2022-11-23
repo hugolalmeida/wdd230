@@ -7,6 +7,7 @@ p {
 }
 body{
     margin: 0px;
+	background-color: aliceblue;
 }
 #banner{
 	background-color: #004AAD ;
@@ -87,10 +88,9 @@ header h3{
 	color: yellow;
 }
 #spot {
-	display: block;
 	background-color: #004AAD;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 18px;
 	margin-right: 20px;
 	width: 85%;
 	height: 140px;
@@ -98,12 +98,11 @@ header h3{
 }
 
 #spot1 {
-	display: block;
 	background-color: #004AAD;
-	margin-top: 0px;
-	margin-left: 20px;
-	width: 85%;
-	height: 140px;
+	margin-top: 24px;
+	margin-left: -1px;
+	width: 100%;
+	height: 100%;
 	border: 1px solid black;
 }
 #spot1 h4{
@@ -118,13 +117,12 @@ header h3{
 
 }
 #spot2 {
-	display: block;
 	background-color: #004AAD;
 	margin-top: 0px;
-	margin-left: 20px;
+	margin-left: -1px;
 	margin-right: 20px;
-	width: 85%;
-	height: 140px;
+	width: 100%;
+	height: 100%;
 	border: 1px solid black;
 }
 .flex{
@@ -132,7 +130,26 @@ header h3{
 	flex-direction: column;
 	justify-content: center;
 }
-
+.flex1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.flex1 img{
+	width: 40px;
+	height: 40px;
+	align-self: center;
+}
+.flex2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.flex2 img{
+	width: 40px;
+	height: 40px;
+	align-self: center;
+}
 #event {
 	width: 100%;
 	grid-column: 2/4;
@@ -499,4 +516,30 @@ label{
 	display: none;
 	text-align: center;
 	background-color: aliceblue;
+}
+
+/* CONTACT PAGE */
+
+fieldset{
+	border-radius: 5%;
+	width: 100%;
+}
+#membership-place1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+#visit{
+	border-radius: 20px;
+	border: 1px solid black;
+	background-color:#004AAD;
+	width: 450px;
+	height:600px;
+}
+#visit img{
+	border-radius: 20px;
+	width: 450px;
+	height: 300px;
+	box-shadow: 0px 1px 5px black;
+	animation: fade-in 0.7s;
 }

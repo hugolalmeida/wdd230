@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Page for the user join the chamber">
+    <meta name="description" content="Contact Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Contact Us</title>
+    <title>CAERJ Contact Us</title>
 </head>
 <body>
     <div id="banner"></div>
@@ -60,11 +60,13 @@
     <h3><span id="current-day"></span></h3>
     </div>
     </header> 
-    <main >
-        <div id="membership-place">
+    <main>
+        <div id="membership-place1">
         
             <form action="thankyou.html">
             <h1 class="member-tittle">Contact Us</h1>
+            <fieldset>
+                <legend>Contact Form</legend>
             <label>Name<br>
             <input class="inputs" type="text" name="name"  required><br>
             </label>
@@ -74,18 +76,17 @@
                 <textarea name="businessDesc" class="input-box" placeholder="Describe your Question/Concern here." required=""></textarea><br></label><br> 
                    
             <input type="hidden" name="date" id="date">
-            <input type="submit" class="submitBtn" name="submitBtn" value="Submit">
+            <input type="submit" class="submitBtn" name="submitBtn" value="Submit"></fieldset>
         </form>
         <div id="space">
-            
             <h1 class="member-tittle">Visit us</h1>
             <div class="picture">
-                <section>
-                    <img class="holder-img" src="images/placeholder.jpg" data-src="images/rsz_pao-de-acucar-rio.jpg" alt="The Christ Redemer">
+                <section id="visit">
+                    <img class="holder-img" src="images/placeholder.jpg" data-src="images/rsz_caerj-2.jpg" alt="CAERJ Administers">
                     <h3 class="subtittle">CHAMBER OF COMMERCE AND INDUSTRY<br>OF THE STATE OF RIO DE JANEIRO</h3>
-                    <h4>Adress</h4>
+                    <h4 class="subtittle">Adress</h4>
                     <p>R. da Assembléia, 77 - 3º Andar - Centro, Rio de Janeiro - RJ, 20011-001</p>
-                    <h4>Email/Phone</h4>
+                    <h4 class="subtittle">Email/Phone</h4>
                     <p>caerj_chamber@gmail.com<br>
                         +55 (24) 33384750</p>
                 </section>
