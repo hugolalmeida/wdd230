@@ -25,8 +25,8 @@ async function apiFetch() {
 function displayResults(weatherData) {
     let temperature = weatherData.main.temp; //celsius
     let velocity = weatherData.wind.speed * 3.6; //kmh
-
-    currentTemp.textContent = temperature.toFixed(0);
+    let fahr = tempConvert(temperature);
+    currentTemp.textContent = fahr.toFixed(0);
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
 
@@ -36,12 +36,12 @@ function displayResults(weatherData) {
   placeName.textContent = weatherData.name;
   speed.textContent = velocity.toFixed(0);
 //windChill
-let fahr = tempConvert(temperature);
+
 let mph = velConvert(velocity);
 
 if (fahr >= 50 ){
     if (velocity <= 3) {
-        windC.textContent = Math.round(windChill(fahr, mph), -1) 
+        windC.textContent = `${Math.round(windChill(fahr, mph), -1)}°F` 
     }
     else{
         windC.textContent = "N/A"
