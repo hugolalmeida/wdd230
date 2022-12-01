@@ -168,6 +168,9 @@ hr {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+.viewport{
+  text-align: center;
+}
 @media (max-width: 1200px){
     nav {
         flex-direction: column;
