@@ -2,7 +2,7 @@
 const currentTemp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('.icon');
 const captionDesc = document.querySelector('#icon-name');
-const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=32.4207&lon=-104.2288&units=imperial&cnt=3&appid=f4342634d1d9263d2c7801dc80233d6c";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&appid=f4342634d1d9263d2c7801dc80233d6c";
 const placeName = document.querySelector('#city-name');
 
 async function apiFetch() {
@@ -22,15 +22,15 @@ async function apiFetch() {
   apiFetch();
 
 function displayResults(weatherData) {
-    let temperature = weatherData.main.temp; //farh
+    let temperature = weatherData.list[0].main.temp; //farh
     currentTemp.textContent = temperature.toFixed(0);
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+    const desc = weatherData.list[0].weather[0].description;
 
     weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
-  placeName.textContent = weatherData.name;
+  placeName.textContent = weatherData.city.name;
 }
 
 // DATE

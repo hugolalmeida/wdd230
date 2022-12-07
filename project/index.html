@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo Bountifulfoods">
+        <img class="logo" src="images/logo.png" alt="Logo Bountifulfoods">
         <h1 class="tittle" >Bountiful Foods | Home</h1>
        </header>
        <div class="sidenav">
@@ -20,6 +20,7 @@
         <a href="aboutus.html">About Us</a>
       </div>
     <main>
+        <!-- <fieldset> -->
         <div class="grid">
             <h2>WELCOME BOUNTIFUL FOODS</h2>
             <div id="news">
@@ -29,34 +30,64 @@
                     <button type="submit">Create a Drink</button> 
                     </form>
             </div>
+            <div id="img-section">
             <img id="food-img" src="images/freshfoods.jpg" alt="Fresh Foods">
-            <div class="food-section">
-                <section id="section">
-                <img id="area" src="images/drinkfruit.jpg" alt="Drink fruits">
-                <h3>Sumary Coastal Area</h3>
-                </section>
-                <div id="section1">
-                <img id="area1" src="images/drinkfruit1.jpg" alt="Drink fruits">
+            <img id="food-img1" src="images/drinkfruit2.jpg" alt="Moonstone Beach">
+            </div>
+            <div class="summary-section">
+                
+                <img id="area1" src="images/moonstonebeach.jpg" alt="Moonstone Beach">
                 <div id="info" >
-                    <h3>Healthy Drinks</h3>
+                    <h3>Moonstone Beach</h3>
+                    <p>Moonstone Beach is in Moonstone Cove on the northeast side of Catalina Island just south of Whites Landing. The two coves, White and Moonstone, are separated by a rocky point that juts out into the bay.<br>
+                        Moonstone Beach is private and operated by Newport Harbor Yacht Club based in Newport Beach, CA. The cove has many moorings available and room for boat anchorage too.</p>
                 </div>
-                </div>
-            </section>
-        </div>
-        
-        <div class="grid1">
-            <div id="weather"><h4 class="subtittle">Weather<br><span id="city-name"></span></h4> 
-                <section>
-                <img class="icon" src="" alt="">
-                <h6 class="subtittle"><span id="temp"></span>°F<br><span id="icon-name"></span></h6>
-            </section>
-        </div>
+            </div>
 
-    </div>
+            <div class="grid1">
+                
+                    <h4 id="subtittle">Weather<br><span id="city-name"></span></h4> 
+                    <h4 id="subtittle1">Map Location</h4>
+                    <div id="weather">
+                    <section id="weather-section">
+                    <img class="icon" src="" alt="">
+                    <h6 class="subtittle"><span id="temp"></span>°F<br><span id="icon-name"></span></h6>
+                    </section>
+                    <hr>
+                    <div id="forecast">
+                        <div id="day1">
+                        <h5 >Day 1</h5>
+                        <img class="icon1" src="" alt=""><br>
+                        <span class="icon-name1"></span>
+                        </div>
+                        <div id="day2">
+                        <h5 >Day 2</h5>
+                        <img class="icon1" src="" alt=""><br>
+                        <span class="icon-name1"></span>
+                        </div>
+                        <div id="day3">
+                        <h5 >Day 3</h5>
+                        <img class="icon1" src="" alt=""><br>
+                        <span class="icon-name1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=200&amp;hl=en&amp;q=1923 Calle Barcelona, Carlsbad, CA 92009, EUA&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:200px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:200px;}.gmap_iframe {height:200px!important;}</style></div>
+            </div>
+        </div>
         
-        
+    <!-- </fieldset>  -->
     </main>
-    <footer><h2 id="text">&copy; <span class="currentyear"></span> | Hugo L. Almeida | WDD230 | Last Updated: <span id="jscript"></span></h2></footer> 
+    <footer>
+        <img class="logo" src="images/logo.png" alt="Logo Bountifulfoods">
+        <h1 class="tittle" >Bountiful Foods</h1>
+        <h2 id="text">&copy; <span class="currentyear"></span> | Hugo L. Almeida | WDD230 | Last Updated: <span id="jscript"></span></h2>
+        <div id="media">
+        <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"><img src="images/face.png" alt="Facebook"></a>
+        <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer> 
     <script src="scripts/home.js" defer></script>
 </body>
 </html>
