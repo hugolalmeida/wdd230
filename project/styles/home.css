@@ -22,7 +22,7 @@ body {
 header{
     display: flex;
     background-color: #008037;
-    background-image: url("rsz_background.jpg");
+    background-image: url("img/rsz_background.jpg");
 }
 .logo{
     width: 100px;
@@ -160,8 +160,9 @@ header{
     text-shadow: 5px 5px 10px black;
 }
 #subtittle1{
+    margin-right: 80px;
     color: white;
-    grid-column: 7/9;
+    grid-column: 7/10;
     text-shadow: 5px 5px 10px black;
 }
 #weather{
@@ -193,6 +194,7 @@ hr{
     margin-left: 40px;
 }
 .mapouter{
+    align-self: center;
     grid-column: 6/10;
     grid-row: 2/3;
     margin-bottom: 20px;

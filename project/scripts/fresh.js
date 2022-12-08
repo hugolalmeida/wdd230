@@ -1,5 +1,5 @@
 const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
-const cards = document.querySelector('.card-grid');
+const options = document.querySelector('.card-grid');
 
 
 fetch(requestURL)
@@ -39,4 +39,30 @@ fetch(requestURL)
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('.card-grid').appendChild(card);
+}
+
+// PICTURE
+let drinkImage = document.querySelectorAll("#drink[data-src]");
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+    drinkImage.forEach((img) => {
+      observer.observe(img);
+    });
+}else{
+  drinkImage.forEach((img) => {
+    observer.observe(img);
+  });
 }
