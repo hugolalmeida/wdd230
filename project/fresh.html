@@ -33,10 +33,10 @@ the total amount of carbohydrates, protein, fat, sugar, and calories based upon 
       <main>
         <div class="grid">
         <div class="drink-section">
-            <form action="thankyou.html">
+            <form>
                 <h1 class="drink-tittle">Create a Drink</h1>
                 <label>Name:
-                <input class="inputs" type="text" name="first_name"  required>
+                <input class="inputs" type="text" name="name"  required>
                 </label>
                 <label>Email:
                 <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required>
@@ -45,11 +45,11 @@ the total amount of carbohydrates, protein, fat, sugar, and calories based upon 
                 <input class="inputs" type="tel"  name="phone" required>
                 </label>
 
-            <h4>Fruits<br></h4>
-            <label id="fruit-options">
-            <input type="radio"> 
-            </label><br>
-            <input type="submit" class="submitBtn" name="submitBtn" value="Create and Request Drink">
+            
+            <fieldset id="fruit-options">
+             <legend><h4>Fruits</h4></legend>
+            </fieldset><br>
+            <input type="submit" class="submitBtn" name="submitBtn" value="Request Drink" onclick="itemBox()">
             <input type="reset" value="Clear">
         </form>
         <div id="drink-section">
