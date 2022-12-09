@@ -50,6 +50,7 @@ function validateBox(){
 // ITEMS BOX NEED TO COMPLETE THIS AND MAKE TH CSS
 function itemBox(){
 let field = createElement("fieldset");
+field.setAttribute("id", "item-field");
 let legend = createElement("legend");
 let userName= document.getElementsByName("name");
 let userEmail= document.getElementsByName("email");
