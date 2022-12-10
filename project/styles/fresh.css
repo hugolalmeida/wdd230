@@ -74,11 +74,7 @@ header{
   form{
     grid-column: 2/6;
   }
-  #drink-section{
-    margin-top: 50px;
-    width: 100%;
-    grid-column: 7/10;
-  }
+  
   #drink{
     border-radius: 20px;
     width: 100%;
@@ -104,6 +100,11 @@ header{
     text-align: left;
   }
   /* DELIVERY SECTION */
+  #drink-section{
+    margin-top: 50px;
+    width: 100%;
+    grid-column: 7/10;
+  }
   #drink-section div{
     display: flex;
     margin-top: 10px;
@@ -126,6 +127,26 @@ header{
   #impact-text{
     margin-left: 30px;
     font-family:'Courier New', Courier, monospace;
+  }
+  #item-field{
+    display: flex;
+    flex-direction: column;
+    grid-column: 7/10;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+  #date{
+    font-size: .7em;
+  }
+  .fruit-attribute{
+    font-size: .8em;
+  }
+  #instruction{
+    margin: 10px;
+  }
+  .submitBtn{
+    margin-bottom: 20px;
   }
 /* FOOTER */
 footer {

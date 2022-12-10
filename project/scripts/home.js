@@ -4,6 +4,7 @@ const weatherIcon = document.querySelector('.icon');
 const captionDesc = document.querySelector('#icon-name');
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&appid=f4342634d1d9263d2c7801dc80233d6c";
 const placeName = document.querySelector('#city-name');
+const request = document.querySelector("#num-request");
 
 async function apiFetch() {
     try {
@@ -32,7 +33,10 @@ function displayResults(weatherData) {
   captionDesc.textContent = desc;
   placeName.textContent = weatherData.city.name;
 }
-
+let numRequest = Number(window.localStorage.getItem("request-ls"));
+      numRequest++;
+      localStorage.setItem("request-ls", numRequest);
+      request.textContent = numRequest;
 // PICTURES
 let foodImage = document.querySelectorAll("#food-img[data-src]");
 let foodImage1 = document.querySelectorAll("#food-img1[data-src]");

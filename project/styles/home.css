@@ -200,6 +200,20 @@ hr{
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px black;
 }
+.request{
+    background-color: #008037;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    padding: 8px;
+    position:fixed;
+    bottom: 120px;
+    left: 10px;
+    z-index: 10;
+    color: white;
+}
+.request p{
+    margin: 10px;
+}
 /* FOOTER */
 footer {
     background-color: #C20114;

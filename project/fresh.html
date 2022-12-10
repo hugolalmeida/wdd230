@@ -33,34 +33,36 @@ the total amount of carbohydrates, protein, fat, sugar, and calories based upon 
       <main>
         <div class="grid">
         <div class="drink-section">
-            <form>
+            <form >
                 <h1 class="drink-tittle">Create a Drink</h1>
                 <label>Name:
-                <input class="inputs" type="text" name="name"  required>
+                <input class="name" type="text" name="name"  required>
                 </label>
                 <label>Email:
-                <input class="inputs" type="text" name="email" placeholder="sample@gmail.com" required>
+                <input class="email" type="text" name="email" placeholder="sample@gmail.com" required>
                 </label>
                 <label>Phone:
-                <input class="inputs" type="tel"  name="phone" required>
+                <input class="phone" type="tel"  name="phone" required>
                 </label>
 
             
             <fieldset id="fruit-options">
              <legend><h4>Fruits</h4></legend>
             </fieldset><br>
-            <input type="submit" class="submitBtn" name="submitBtn" value="Request Drink" onclick="itemBox()">
-            <input type="reset" value="Clear">
+            <input type="submit" class="submitBtn" name="submitBtn" value="Request Drink" >
+            <input type="reset" class="submitBtn" value="Clear">
         </form>
+
         <div id="drink-section">
         <img id="drink" src="images/placeholder.jpg" data-src="images/drinkfruit.jpg" alt="Drink">
         <div>
             <img id="delivery-icon" src="images/delivery.png" alt="Delivery Icon">
-            <h2>Delivery</h2>
+            <h2>Comming soon: Delivery</h2>
         </div>
         <p>Phone: +1-760-555-0148</p>
         <p>Email: bountfoods@gmail.com</p>
         <p id="impact-text">Join us for a fresh and healthy life.</p> 
+        <div id="item-field"></div>
         </div>
         </div>
         </div>
