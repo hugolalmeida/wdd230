@@ -169,10 +169,21 @@ header{
     grid-column: 3/5;
 }
 #weather-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     color: white;
     text-shadow: 5px 5px 10px black;
+    align-items: center;
+    justify-items: center;
     /* border-bottom: 2px #1E1E24 solid; */
 }
+#icon{
+    align-self: center;
+}
+.subtittle{
+    align-self: center;
+}
+
 hr{
     grid-column: 2/6;
 }
@@ -186,6 +197,13 @@ hr{
     display: flex;
     flex-direction: column;
     color: white;
+}
+#forecast h5{
+    font-size: .7em;
+}
+#forecast p{
+    margin-top: 0px ;
+    font-size: .8em;
 }
 #day2{
     margin-left: 40px;
