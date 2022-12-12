@@ -114,10 +114,13 @@ if ('IntersectionObserver' in window) {
     observer.observe(img);
   });
 }
-
+// MENU
+function toggleMenu () {
+  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
 // DATE
 let d = new Date();
 
-let year = document.querySelector(".currentyear").textContent = d.getFullYear();
+// let year = document.querySelector(".currentyear").textContent = d.getFullYear();
 
 let last_update = document.querySelector("#jscript").textContent = document.lastModified;

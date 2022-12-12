@@ -7,6 +7,7 @@
     <meta name="description" content="Bountiful Foods Home Page">
     <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -14,6 +15,11 @@
         <img class="logo" src="images/logo.png" alt="Logo Bountifulfoods">
         <h1 class="tittle" >Bountiful Foods | Home</h1>
        </header>
+       <nav>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="fresh.html">Fresh</a></div>
+        <div><a href="aboutus.html">About Us</a></div>
+       </nav>
        <div class="sidenav">
         <a href="index.html">Home</a>
         <a href="fresh.html">Fresh</a>
@@ -25,10 +31,18 @@
             <h2>WELCOME BOUNTIFUL FOODS</h2>
             <div id="news">
                 <h3>News</h3>
-                <p></p>
+                <div id="good-news">
+                <ul>
+                    <li>Delivery soon...</li>
+                    <li>Fresh and healthy foods.</li>
+                    <li>Now  you can know the attributes of the fruit!</li>
+                    <li>Create your own drink!</li>
+                    <li>Create an essential and healthy drink <br> knowing the calories and proteins of the fruit.</li>
+                </ul>
+                </div>
                 <form action="fresh.html">
-                    <button type="submit">Create a Drink</button> 
-                    </form>
+                    <button class="submitBtn" type="submit"><span>Create a Drink</span></button> 
+                </form>
             </div>
             <div id="img-section">
             <img id="food-img" src="images/placeholder.jpg" data-src="images/freshfoods.jpg" alt="Fresh Foods">
@@ -84,7 +98,7 @@
     <footer>
         <img class="logo" src="images/logo.png" alt="Logo Bountifulfoods">
         <h1 class="tittle" >Bountiful Foods</h1>
-        <h2 id="text">&copy; <span class="currentyear"></span> | Hugo L. Almeida | WDD230 | Last Updated: <span id="jscript"></span></h2>
+        <h2 id="text">+1-760-555-0148<br>1923 Calle Barcelona, Carlsbad, CA<br>Last Updated: <span id="jscript"></span></h2>
         <div id="media">
         <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="Instagram"></a>
         <a href="https://www.facebook.com/"><img src="images/face.png" alt="Facebook"></a>

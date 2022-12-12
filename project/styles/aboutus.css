@@ -1,0 +1,57 @@
+/* HEADER */
+header{
+    display: flex;
+    background-color: #008037;
+    background-image: url("img/rsz_background.jpg");
+}
+.logo{
+    width: 100px;
+    border-radius: 20%;
+    margin: 10px;
+}
+.tittle{
+    align-self: center;
+    color: white;
+}
+/* NAVIGATION BAR */
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    /* top: 20px;
+    left: 10px; */
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+
+  /* FOOTER */
+footer {
+    background-color: #C20114;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    color: white;
+}
+#media{
+    align-self: center;
+    margin-left: 5%;
+}
+#media img{
+    margin: 5px;
+    width: 40px;
+    border-radius: 10px;
+}

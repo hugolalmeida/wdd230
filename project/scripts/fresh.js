@@ -175,6 +175,6 @@ if ('IntersectionObserver' in window) {
 // DATE
 
 
-let year = document.querySelector(".currentyear").textContent = d.getFullYear();
+// let year = document.querySelector(".currentyear").textContent = d.getFullYear();
 
 let last_update = document.querySelector("#jscript").textContent = document.lastModified;
