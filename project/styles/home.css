@@ -273,11 +273,11 @@ hr{
 .request{
     background-color: #008037;
     border-radius: 8px;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    /* box-shadow: 5px 5px 10px black; */
     padding: 8px;
     position:fixed;
-    bottom: 120px;
-    left: 10px;
+    bottom: 300px;
+    left: 0px;
     z-index: 10;
     color: white;
 }
@@ -301,6 +301,10 @@ footer {
     margin: 5px;
     width: 40px;
     border-radius: 10px;
+}
+#resource{
+    color: yellow;
+    text-decoration: none;
 }
 #text{
     margin-left: 20px;
@@ -406,7 +410,11 @@ footer {
 }
 .request{
     position:absolute;
-    bottom: 570px;
+    bottom: 500px;
+    left: 77px;
+}
+footer .tittle{
+    display: none;
 }
 }
 
@@ -426,8 +434,27 @@ footer {
         text-align: center;
         margin-left: 25px;
     }
+    .request{
+        position:absolute;
+        bottom: 500px;
+        left: 10px;
+    }
     footer .logo{
-        height: 50px;
+        width: 70px;
+        height: 70px;
         align-self: center;
     }
 }
+@media (max-width: 500px){
+    #media{
+      flex-direction: column;
+    }
+    #media a img{
+      width: 30px;
+    }
+    .request{
+        position:absolute;
+        bottom: 466px;
+        left: 0px;
+    }
+  }

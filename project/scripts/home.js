@@ -72,7 +72,6 @@ d3.textContent = weatherData.list[21].dt_txt;
   humidity.textContent = weatherData.list[0].main.humidity
 }
 let numRequest = Number(window.localStorage.getItem("request-ls"));
-      numRequest++;
       localStorage.setItem("request-ls", numRequest);
       request.textContent = numRequest;
 // PICTURES
