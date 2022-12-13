@@ -31,8 +31,8 @@ fetch(requestURL)
   // Add the value to the elements 
   label.textContent = fruitName;
   // Add/append the section(card) with the h2 element
- section.appendChild(label);
-  section.appendChild(card);
+ label.appendChild(card);
+  section.appendChild(label);
   // Add/append the existing HTML div with the cards class with the section(card)
  options.appendChild(section);
   

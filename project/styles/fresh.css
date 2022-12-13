@@ -100,7 +100,7 @@ nav{
     grid-template-columns: repeat(3, 1fr);
   }
   #fruit-options input{
-    margin-left: 0px;
+    margin-left: 2px;
   }
   legend{
     text-align: left;
