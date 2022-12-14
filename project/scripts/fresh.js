@@ -2,6 +2,7 @@
 const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 const options = document.querySelector('#fruit-options');
 const userName= document.querySelector(".name");
+const userAddress = document.querySelector(".address");
 const userEmail= document.querySelector(".email");
 const userPhone= document.querySelector(".phone");
 const checkboxes = document.getElementsByName("fruit_options");
@@ -42,19 +43,29 @@ fetch(requestURL)
 
       let myName = userName.value;
       userName.value = "";
-      
+
+      let myAddress = userAddress.value;
+      userAddress.value ="";
+
       let myEmail = userEmail.value;
       userEmail.value = "";
       
       let myPhone = userPhone.value;
       userPhone.value = "";
       if (myName === ""){
+        alert("SOME INFORMATION IS MISSING");
         return false;
       } else if (myEmail === ""){
+        alert("SOME INFORMATION IS MISSING");
+        return false;
+      }else if (myAddress === ""){
+        alert("SOME INFORMATION IS MISSING");
         return false;
       } else if (myPhone === ""){
+        alert("SOME INFORMATION IS MISSING");
         return false;
       } else if (selectedBoxes(this.form).length === 0){
+        alert("SOME INFORMATION IS MISSING");
         return false;
       }else{
 
@@ -62,10 +73,17 @@ fetch(requestURL)
       let sections = document.createElement("section");
       let legend = document.createElement("h4");
       let pName = document.createElement("p");
+      pName.setAttribute("class", "user-info");
+      let pAddress = document.createElement("p");
+      pAddress.setAttribute("class", "user-info");
       let pEmail = document.createElement("p");
+      pEmail.setAttribute("class", "user-info");
       let pPhone = document.createElement("p");
-      let pTittle = document.createElement("p")
+      pPhone.setAttribute("class", "user-info");
+      let pTittle = document.createElement("p");
+      pTittle.setAttribute("class", "user-info");
       let pFruits = document.createElement("p");
+      pFruits.setAttribute("class", "user-info");
       let c_day = document.createElement("p");
       c_day.setAttribute("id", "date");
       let carbohydrates = document.createElement("p");
@@ -90,12 +108,13 @@ fetch(requestURL)
       let sec = d.getSeconds();
   
       legend.textContent = "Request's Information";
-      pName.textContent = `Name: ${myName}`;
-      pEmail.textContent = `Email: ${myEmail}`;
-      pPhone.textContent = `Phone: ${myPhone}`;
-      pTittle.textContent = `Fruits: ${res.join(", ")} `;//
+      pName.innerHTML = `Name:<br> ${myName}`;
+      pAddress.innerHTML = `Address:<br> ${myAddress}`;
+      pEmail.innerHTML = `Email:<br> ${myEmail}`;
+      pPhone.innerHTML = `Phone:<br> ${myPhone}`;
+      pTittle.innerHTML = `Fruits:<br> ${res.join(", ")} `;//
       c_day.textContent = `${fulldateUK} ${hour}:${min}:${sec} `;
-      instruction.textContent = `Your drink was created and requested! Please wait for your drink.`
+      instruction.textContent = `Your drink was created and requested! Please wait a few minutes for your drink.`
       carbohydrates.textContent = `Carbohydrates: ${sumAttributes(carbohydratesList)}`;
       protein.textContent = `Protein: ${sumAttributes(proteinList)}`;
       fat.textContent = `Fat: ${sumAttributes(fatList)}`;
@@ -105,6 +124,7 @@ fetch(requestURL)
       field.appendChild(sections);
       sections.appendChild(legend);
       sections.appendChild(pName);
+      sections.appendChild(pAddress);
       sections.appendChild(pEmail);
       sections.appendChild(pPhone);
       sections.appendChild(pTittle);
@@ -119,6 +139,7 @@ fetch(requestURL)
       sections.appendChild(instruction);
       // LOCALSTORAGE
       drinkStorage();
+      alert("Congratulation! Your drink was created!");
     } 
       })
   });
@@ -173,7 +194,7 @@ function validateBox(){
     }  
     if(numberOfCheckedItems > 3)  
     {  
-        alert("You can't select more than three fruits!");  
+        alert("ONLY THREE(3) FRUITS!");  
         return false;  
     }  
 }

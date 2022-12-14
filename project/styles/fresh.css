@@ -142,6 +142,19 @@ nav{
     border: 1px solid black;
     margin-bottom: 20px;
   }
+  .user-info{
+    font-size: .9em;
+    margin-right: 15px;
+  }
+  .name{
+    margin-left: 3px;
+  }
+  .address{
+    margin-left: 10px;
+  }
+  .email{
+    margin-left: 5px;
+  }
 
   #date{
     font-size: .7em;
