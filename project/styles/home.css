@@ -275,11 +275,10 @@ hr{
     border-radius: 8px;
     /* box-shadow: 5px 5px 10px black; */
     padding: 8px;
-    position:fixed;
-    bottom: 300px;
-    left: 0px;
-    z-index: 10;
+    grid-column: 2/4;
+    grid-row: 2/3;
     color: white;
+    margin-bottom: -7px;
 }
 .request p{
     margin: 0px;
@@ -408,11 +407,7 @@ footer {
 #media a img {
     width: 40px;
 }
-.request{
-    position:absolute;
-    bottom: 500px;
-    left: 77px;
-}
+
 footer .tittle{
     display: none;
 }
@@ -452,9 +447,5 @@ footer .tittle{
     #media a img{
       width: 30px;
     }
-    .request{
-        position:absolute;
-        bottom: 466px;
-        left: 0px;
-    }
+    
   }
