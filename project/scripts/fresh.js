@@ -58,7 +58,7 @@ fetch(requestURL)
         return false;
       }else{
 
-      let field = document.getElementById("item-field");
+      let field = document.querySelector(".item-field");
       let sections = document.createElement("section");
       let legend = document.createElement("h4");
       let pName = document.createElement("p");
@@ -80,7 +80,8 @@ fetch(requestURL)
       calories.setAttribute("class", "fruit-attribute");
       let line = document.createElement("hr");
       let instruction = document.createElement("h4");
-      instruction.setAttribute("id", "instruction");  
+      instruction.setAttribute("id", "instruction");
+      
       const fulldateUK = new Intl.DateTimeFormat("en-UK", {
         dateStyle: "full"
       }).format(d);
@@ -121,7 +122,10 @@ fetch(requestURL)
     } 
       })
   });
-  
+  function refreshPage(){
+    window.location.reload();
+} 
+
   function selectedBoxes(form) {
     let selectedBoxesArr = [];
     let inputFields = form.getElementsByTagName('input');

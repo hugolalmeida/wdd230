@@ -134,7 +134,7 @@ nav{
     margin-left: 30px;
     font-family:'Courier New', Courier, monospace;
   }
-  #item-field{
+  .item-field{
     display: flex;
     flex-direction: column;
     grid-column: 7/10;
@@ -142,6 +142,7 @@ nav{
     border: 1px solid black;
     margin-bottom: 20px;
   }
+
   #date{
     font-size: .7em;
   }
@@ -193,6 +194,8 @@ nav{
     opacity: 1;
     right: 0;
   }
+  
+  
 /* FOOTER */
 footer {
   background-color: #C20114;
